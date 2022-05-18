@@ -20,6 +20,10 @@ body {
   color: var(--off-white);
 }
 
+.category {
+  padding: 2em;
+}
+
 .container {
   width: 550px; 
   height: auto; 
@@ -38,9 +42,11 @@ h1 {
 
 .hebrew {
   font-family: 'Noto Serif Hebrew';
-  color: var(--teal);
-  font-size: 1.5rem;
+  color: var(--off-white);
+  font-size: 2rem;
   font-weight: 400;
+  background-color: var(--teal);
+  padding: 1.25rem;
 }
 
 .input {
@@ -87,8 +93,10 @@ h1 {
 
 p {
   font-family: "Raleway", sans-serif;
-  font-size: 1.5rem; 
-  color: var(--teal)
+  font-size: 2rem;
+  color: var(--teal);
+  text-align: center;
+  padding: .5rem;
 }
 
 .submit--button {
