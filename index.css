@@ -16,7 +16,7 @@ body {
   display: flex; 
   flex-direction: column;
   font-family: 'Raleway', sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   color: var(--off-white);
 }
 
@@ -25,15 +25,25 @@ body {
 }
 
 .container {
-  width: 550px; 
+  width: 80vw; 
   height: auto; 
   margin: auto;
   border: 10px solid var(--off-white);
 }
 
+.grid-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.grid-area > h2, .grid-area > p {
+  margin: .5em;
+}
+
 h1 {
   font-family: 'Fredericka the Great', cursive;
-  font-size: 4rem;
+  font-size: 6rem;
   font-weight: 100;
   text-align: center;
   margin: 0px 0px 2rem 0px;
@@ -52,11 +62,12 @@ h1 {
 .input {
   height: 5vh;
   margin: 0px 0px 2rem 0px;
-  font-size: 2rem;
-  font-weight: 200;
+  font-size: 3rem;
+  font-weight: 400;
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .input-container {
@@ -82,13 +93,15 @@ h1 {
 
 .input--label {
   margin: 0px 20px 0px 0px;
+  max-width: 25%;
 }
 
 .input--text {
   border: var(--off-white) solid 2px;
   background-color: rgba(0,0,0,.0);
-  height: 2rem;
+  width: 50%;
   padding: 1rem;
+  font-size: 2rem;
 }
 
 p {
@@ -109,4 +122,15 @@ p {
   border: solid 2px rgba(0,0,0,.1);
   display: block;
   margin-left: auto;
+}
+
+@media (max-width: 800px) {
+  .grid-area {
+    display: inherit;
+  } 
+
+  .input {
+    display: block;
+  }
+  
 }
