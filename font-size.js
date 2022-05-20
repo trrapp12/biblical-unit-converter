@@ -2,8 +2,10 @@
 
   window.addEventListener('load', () => {
 
-    console.log('entered font size js')
+
+  console.log('entered font size js')
   const inputElement = document.getElementById('amount');
+  inputElement.focus();
   let fontSize = 150;
 
 
