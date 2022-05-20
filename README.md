@@ -24,7 +24,7 @@
 ### Description:
 
 
-This is an example for a Product Landing Page for the QUADRAStalkr, an imaginary drone from an imaginary company (that I have all the rights to :smirk: :smirk: :smirk: ).  Includes use of video media, navigation elements, smart use of CSS animation to create an interactive design, and a form element that submits to a static page.  
+This is a simple conversion tool, but instead of imperial to metric I wanted to answer something a little more fun. Like how many feet are in a cubit? 
 
 <br>
 <br>
@@ -48,7 +48,7 @@ This is an example for a Product Landing Page for the QUADRAStalkr, an imaginary
 ### Project published at: 
 
 
-[QUADRAStalkr](https://trrapp12.github.io/Product-Page/)
+[Bible Conversion Tool]([https://trrapp12.github.io/Product-Page/](https://trrapp12.github.io/bible-conversion-tool/))
 
 <br>
 <br>
