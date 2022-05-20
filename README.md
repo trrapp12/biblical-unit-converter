@@ -48,7 +48,7 @@ This is a simple conversion tool, but instead of imperial to metric I wanted to 
 ### Project published at: 
 
 
-[Bible Conversion Tool]([https://trrapp12.github.io/Product-Page/](https://trrapp12.github.io/bible-conversion-tool/))
+[Bible Conversion Tool](https://trrapp12.github.io/Product-Page/)
 
 <br>
 <br>
