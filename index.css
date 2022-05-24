@@ -34,6 +34,11 @@ body {
   align-items: center;
 }
 
+.center-line {
+  position: absolute;
+  left: 50%;
+}
+
 .container {
   width: 80vw; 
   height: auto; 
@@ -41,8 +46,21 @@ body {
   border: 10px solid var(--sandy-brown);
 }
 
+.conversion-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .conversion-container:nth-child(2),  {
   margin-bottom: 2em;
+}
+
+.center-p {
+  padding: .5rem 0;
+}
+
+.direction-left {
+  direction: ltr;
 }
 
 h1 {
@@ -127,12 +145,18 @@ input[type=text], input[type=text]:focus {
 }
 
 .middle {
-  width: 80%;
+  width: 95%;
   margin: auto;
   padding-top: 35%;
 }
 
 p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  margin-bottom: .5rem;
+}
+
+.hebrew-side-bar > p {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
   color: var(--teal);
