@@ -37,11 +37,25 @@ This is a simple conversion tool, but instead of imperial to metric I wanted to 
 ### Project demonstrates the following:
 
 
-- [X] Two-way data-binding with vanilla Javascript.
+- [X] Array to hold variables.
 
-- [X] Use of listeners and JS to detect scroll width and client width to make fonts get smaller relative to input element.
+- [X] Buttons add elements to the array.
+
+- [X] Displays updates to both total, prices, and services added
+
+- [X] Logic prevents service from being charged twice.
+
+- [X] Use of template literals
 
 - [X] Event listeners and DOM manipulation.
+
+- [X] Use of .innerHTML
+
+- [X] Traverse childNodes of dynamically introduced elements to insert elements
+
+- [X] Use of IFFE to prevent Global name space pollution
+
+- [X] Use of event listeners on window object to make sure elements are loaded before adding further listeners.
 
 <br>
 <br>
