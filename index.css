@@ -2,11 +2,11 @@
   /* --slate-gray: #BEBEBE;40302
   --teal: #44A6A6;
   --off-white: #F2F2F2; */
-  --dark-teal: #498C86;
-  --light-teal: #7ED9D0;
-  --neutral-brown: #8C735D; 
+  --dark-teal: #498c86;
+  --light-teal: #7ed9d0;
+  --neutral-brown: #8c735d;
   --dark-brown: #403027;
-  --sandy-brown: #D9BFB0;
+  --sandy-brown: #d9bfb0;
 }
 
 * {
@@ -17,15 +17,14 @@
 }
 
 body {
-  display: flex; 
-  flex-direction: column;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
   color: var(--neutral-brown);
   font-size: 12px;
 }
 
 .category {
+  /* this is the grid container - has middle, hebrew sidebar */
   padding: 2em;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
@@ -40,8 +39,8 @@ body {
 }
 
 .container {
-  width: 80vw; 
-  height: auto; 
+  width: 80vw;
+  height: auto;
   margin: auto;
   border: 10px solid var(--neutral-brown);
 }
@@ -51,12 +50,12 @@ body {
   justify-content: space-between;
 }
 
-.conversion-container:nth-child(2),  {
+.conversion-container:nth-child(2) {
   margin-bottom: 2em;
 }
 
 .center-p {
-  padding: .5rem 0;
+  padding: 0.5rem 0;
 }
 
 .direction-left {
@@ -65,11 +64,11 @@ body {
 
 .eight-together {
   font-size: 5rem;
-  font-family:'Noto Serif Hebrew';
+  font-family: "Noto Serif Hebrew";
 }
 
 h1 {
-  font-family: 'Fredericka the Great', cursive;
+  font-family: "Fredericka the Great", cursive;
   font-size: 6rem;
   font-weight: 100;
   text-align: center;
@@ -81,7 +80,7 @@ h1 {
 
 h2 {
   margin: auto;
-  font-family: 'Fredericka the Great', cursive;
+  font-family: "Fredericka the Great", cursive;
   font-size: 3rem;
   font-weight: 100;
   text-align: center;
@@ -89,7 +88,7 @@ h2 {
 }
 
 .hebrew {
-  font-family: 'Noto Serif Hebrew';
+  font-family: "Noto Serif Hebrew";
   color: var(--neutral-brown);
   font-size: 1.45rem;
   font-weight: 400;
@@ -107,16 +106,16 @@ h2 {
 
 .input-container {
   background-image: linear-gradient(
-0deg,
-hsl(174deg 54% 67%) 0%,
-hsl(174deg 47% 63%) 1%,
-hsl(174deg 41% 60%) 6%,
-hsl(174deg 36% 56%) 17%,
-hsl(174deg 32% 52%) 34%,
-hsl(174deg 30% 49%) 57%,
-hsl(175deg 30% 45%) 81%,
-hsl(175deg 31% 42%) 100%
-);
+    0deg,
+    hsl(174deg 54% 67%) 0%,
+    hsl(174deg 47% 63%) 1%,
+    hsl(174deg 41% 60%) 6%,
+    hsl(174deg 36% 56%) 17%,
+    hsl(174deg 32% 52%) 34%,
+    hsl(174deg 30% 49%) 57%,
+    hsl(175deg 30% 45%) 81%,
+    hsl(175deg 31% 42%) 100%
+  );
   height: 30vh;
   display: flex;
   flex-direction: column;
@@ -124,38 +123,35 @@ hsl(175deg 31% 42%) 100%
   border-bottom: 2px solid var(--sandy-brown);
 }
 
-.input-positioner {
-
-}
-
-.input--text, .input--text:focus, .input--text:focus-visible {
+.input--text,
+.input--text:focus,
+.input--text:focus-visible {
   border: var(--neutral-brown) solid 5px;
-  background-color: rgba(0,0,0,.0);
+  background-color: rgba(0, 0, 0, 0);
   width: 50%;
   font-size: 10rem;
   height: 30vh;
   width: 30vh;
   border-radius: 50%;
-  padding: calc((30vh/ 2) - 3rem );
+  padding: calc((30vh / 2) - 3rem);
   color: var(--neutral-brown);
 }
 
-input[type=text], input[type=text]:focus {
+input[type="text"],
+input[type="text"]:focus {
   border: var(--sandy-brown) solid 5px 2px 2px 5px;
-  background-color: rgba(0,0,0,.0);
+  background-color: rgba(0, 0, 0, 0);
   width: 50%;
   font-size: 10rem;
   height: 30vh;
   width: 30vh;
   border-radius: 50%;
-  padding: calc((30vh/ 2) - 3rem );
+  padding: calc((30vh / 2) - 3rem);
   color: var(--sandy-brown);
   outline: none;
   border-radius: 50%;
-  /* background: linear-gradient(145deg, rgba(255, 255, 255, 0.7), rgba(91, 174, 166, .7)); */
   box-shadow: 7px 7px 16px #8c735d, -2px 0px 6px var(--sandy-brown);
   mix-blend-mode: normal;
-  /* transition: 5s; */
 }
 
 .spinner {
@@ -172,10 +168,11 @@ input[type=text], input[type=text]:focus {
 p {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
-.margin-right > p, .margin-left > p {
+.margin-right > p,
+.margin-left > p {
   line-height: 2rem;
 }
 
@@ -184,7 +181,7 @@ p {
   font-size: 1rem;
   color: var(--teal);
   text-align: center;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .right-align {
@@ -194,12 +191,12 @@ p {
 
 .submit--button {
   padding: 1rem 2rem;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: 800;
   text-transform: uppercase;
   background-color: var(--neutral-brown);
   color: var(--teal);
-  border: solid 2px rgba(0,0,0,.1);
+  border: solid 2px rgba(0, 0, 0, 0.1);
   display: block;
   margin-left: auto;
 }
@@ -207,20 +204,19 @@ p {
 @media (max-width: 800px) {
   .grid-area {
     display: inherit;
-  } 
+  }
 
   .input {
     display: block;
   }
-  
 }
 
 @keyframes spin {
   from {
-    transform: rotate3d(0)
+    transform: rotate3d(0);
   }
 
   to {
-    transform: rotate3d(0, 1, 0, 720deg)
+    transform: rotate3d(0, 1, 0, 720deg);
   }
 }

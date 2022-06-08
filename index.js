@@ -1,42 +1,48 @@
+// IFFE creates natural lexical scoping so the global variables in this file don't accidentally pollute name space of other JS files
 (()=>{
-
+  
+  // establish variables
   const data = {
     value: '',
   };
+  // establish specific variables for containers
+  const lengthElements = document.querySelectorAll('.bind');
+  const feetToEtzbaDisplay = document.getElementById('conversion--1');
+  const etzbaToFeetDisplay = document.getElementById('conversion--2');
+  const feetToTefachDisplay = document.getElementById('conversion--3');
+  const tefachToFeetDisplay = document.getElementById('conversion--4');
+  const feetToZeretDisplay = document.getElementById('conversion--5');
+  const zeretToFeetDisplay = document.getElementById('conversion--6');
+  const feetToAmahDisplay = document.getElementById('conversion--7');
+  const amahToFeetDisplay = document.getElementById('conversion--8');
+  const feetToRisDisplay = document.getElementById('conversion--9');
+  const risToFeetDisplay = document.getElementById('conversion--10');
+  const feetToMilDisplay = document.getElementById('conversion--11');
+  const milToFeetDisplay = document.getElementById('conversion--12');
+  const feetToParasaDisplay = document.getElementById('conversion--13');
+  const parasaToFeetDisplay = document.getElementById('conversion--14');
 
+  // this creates a two way data binding so the 
   Object.defineProperty(data, 'prop', {
     get: function () {
-      console.log('getter called');
+      // console.log('getter called');
       return this.value;
     },
     set: function (value) {
-      console.log('setter called');
+      // console.log('setter called');
       this.value = value;
       displayNumber();
     }
   })
 
+  // create keyup event listener which uses our data.prop to trigger the actual binding
   document.getElementById('amount').addEventListener('keyup', (event) => {
     data.prop = event.target.value;
   })
 
+  // changes all the displays
   function displayNumber () {
-    const lengthElements = document.querySelectorAll('.bind');
-    const feetToEtzbaDisplay = document.getElementById('conversion--1');
-    const etzbaToFeetDisplay = document.getElementById('conversion--2');
-    const feetToTefachDisplay = document.getElementById('conversion--3');
-    const tefachToFeetDisplay = document.getElementById('conversion--4');
-    const feetToZeretDisplay = document.getElementById('conversion--5');
-    const zeretToFeetDisplay = document.getElementById('conversion--6');
-    const feetToAmahDisplay = document.getElementById('conversion--7');
-    const amahToFeetDisplay = document.getElementById('conversion--8');
-    const feetToRisDisplay = document.getElementById('conversion--9');
-    const risToFeetDisplay = document.getElementById('conversion--10');
-    const feetToMilDisplay = document.getElementById('conversion--11');
-    const milToFeetDisplay = document.getElementById('conversion--12');
-    const feetToParasaDisplay = document.getElementById('conversion--13');
-    const parasaToFeetDisplay = document.getElementById('conversion--14');
-    
+   
     for (let i = 0; i < lengthElements.length; i ++) {
       // console.log(lengthElements[i])
       let currentNumber = data.prop;
@@ -58,7 +64,8 @@
       parasaToFeetDisplay.innerText = parasa(currentNumber, 'parasa');
     }
   }
-
+  
+  // creates functions that do individual conversions 
   function etzba(amount, start) {
     if (start === 'feet') {
       return (amount * (11.28)).toFixed(3)
