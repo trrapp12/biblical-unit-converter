@@ -19,6 +19,6 @@
     window.addEventListener('keydown', () => {
       // console.log('key down')
       addSpin(spinner); 
-      setTimeout(() => { removeSpin(spinner)}, 3000)
+      setTimeout(() => { removeSpin(spinner)}, 5000)
     })
   })();
