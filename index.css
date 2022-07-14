@@ -220,6 +220,13 @@ p {
 
 /* =============================== MEDIA QUERIES  =============================== */
 
+@media (min-width: 801px) and (max-width: 16500px) { 
+
+  
+  
+}
+
+
 @media (max-width: 800px) {
 
   .category {
