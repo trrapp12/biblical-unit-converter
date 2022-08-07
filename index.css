@@ -159,6 +159,9 @@ input[type="text"]:focus {
   direction: ltr;
 }
 
+.hidden {
+  display: none !important;
+}
 
 .input {
   display: flex;
@@ -247,8 +250,8 @@ p {
 
   .category {
     display: block;
-    padding: 2rem;
-  }
+    padding: 1rem;
+}
 
   .container {
     width: 80vw;
@@ -298,35 +301,35 @@ p {
     letter-spacing: 10px;
   }
 
-  .input {
+  input[type="text"], input[type="text"]:focus {
+    border: var(--sandy-brown) solid 5px 2px 2px 5px;
+    background-color: rgba(0, 0, 0, 0);
+    width: 50%;
+    font-size: 10rem;
+    height: 30vh;
+    width: 30vh;
+    border-radius: 50%;
+    padding: calc((30vh / 2) - 3rem);
+    color: var(--sandy-brown);
+    outline: none;
+    border-radius: 50%;
+    box-shadow: 7px 7px 16px #8c735d, -2px 0px 6px var(--sandy-brown);
+    mix-blend-mode: normal;
+    margin: 0rem auto 3vh auto;
     display: block;
-  }
-
-input[type="text"], input[type="text"]:focus {
-	border: var(--sandy-brown) solid 5px 2px 2px 5px;
-	background-color: rgba(0, 0, 0, 0);
-	width: 50%;
-	font-size: 10rem;
-	height: 30vh;
-	width: 30vh;
-	border-radius: 50%;
-	padding: calc((30vh / 2) - 3rem);
-	color: var(--sandy-brown);
-	outline: none;
-	border-radius: 50%;
-	box-shadow: 7px 7px 16px #8c735d, -2px 0px 6px var(--sandy-brown);
-	mix-blend-mode: normal;
-	margin: auto;
-	display: block;
 }
 
 .input-container {
-	background-image: linear-gradient( 0deg, hsl(174deg 54% 67%) 0%, hsl(174deg 47% 63%) 1%, hsl(174deg 41% 60%) 6%, hsl(174deg 36% 56%) 17%, hsl(174deg 32% 52%) 34%, hsl(174deg 30% 49%) 57%, hsl(175deg 30% 45%) 81%, hsl(175deg 31% 42%) 100% );
-	height: 54vh;
-	display: flex;
-	flex-direction: column;
-	padding: 1.5rem 4rem 0rem 4rem;
-	border-bottom: 2px solid var(--sandy-brown);
+  background-image: linear-gradient( 0deg, hsl(174deg 54% 67%) 0%, hsl(174deg 47% 63%) 1%, hsl(174deg 41% 60%) 6%, hsl(174deg 36% 56%) 17%, hsl(174deg 32% 52%) 34%, hsl(174deg 30% 49%) 57%, hsl(175deg 30% 45%) 81%, hsl(175deg 31% 42%) 100% );
+  height: 64vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-bottom: 2px solid var(--sandy-brown);
+}
+
+.middle {
+  padding: 0rem;
 }
 
   .margin-right > p, .margin-left > p {

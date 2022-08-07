@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <meta charset="utf-8"/>
     <title>Bible Conversion Tool</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,7 +33,7 @@
         <div class="category">
           <!-- grid container -->
           <!-- start of the left column -->
-          <aside class="english-side-bar">
+          <aside class="english-side-bar" id="english-side-bar">
             <!-- even though the class isn't used, it's name helps identify which of the three columns it is, so I decided to keep it in -->
             <h2 class="hebrew">(אצבע (אצבעות / Etzba (width of a thumb) </h2>
             <h2 class="hebrew">(טפח (טפחים / Tefach (width of a hand)</h2>
@@ -45,7 +45,7 @@
           </aside>
           <!-- end of the left column -->
           <!-- start of the middle column -->
-          <div class="middle column">
+          <div class="middle column" id="middle-column">
             <!-- category child, column is an unused class -->
             <!-- start of grid areas -->
             <!-- start grid area 1 -->
@@ -150,7 +150,7 @@
           </div>
           <!-- end of middle column -->
           <!-- start of right column -->
-          <aside class="hebrew-side-bar">
+          <aside class="hebrew-side-bar" id="hebrew-side-bar">
             <!-- hebrew-side-bar > p is used, but not hebrew-side-bar exclusively -->
             <p class="right-align">The Israelites originally measured length by the finger, hand, arm, span, foot, and pace. However, these are different for everyone. Eventually they had to create a common standard. This created a system that has different names and amounts for measuring lengths, making it hard for us to understand it today.</p>
             <p class="right-align">This calculator is an attempt to make the otherwise obscure measurements of the bible easily understandable by converting them into a unit more commonly understood. -- Trevor R.</p>
@@ -165,5 +165,6 @@
     <script src="index.js"></script>
     <script src="font-size.js"></script>
     <script src="spinner.js"></script>
+    <script src="accordion.js"></script>
   </body>
 </html>
