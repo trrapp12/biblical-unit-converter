@@ -68,11 +68,13 @@ input[type="text"]:focus {
 
 .accordion-bar {
   width: 100%;
-  border-top: 3rem solid var(--neutral-brown);
-  border-radius: 5px;
+  border-top: 9px solid transparent;
+  border-image: linear-gradient(to right, var(--neutral-brown), var(--sandy-brown));
+  border-image-slice: 1;
   position: relative;
   transition: 300ms;
-  margin-bottom: 2rem;
+  height: 100%;
+  background-color: var(--sandy-brown);
 }
 
 .accordion-bar-hover {
@@ -142,7 +144,7 @@ input[type="text"]:focus {
   grid-template-columns: 1fr 3fr 1fr;
   column-gap: 1em;
   justify-items: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .center-line {
@@ -355,12 +357,12 @@ p {
 @media (min-width: 300px) and (max-width: 1208px) {
   .input-container {
     background-image: linear-gradient( 0deg, hsl(174deg 54% 67%) 0%, hsl(174deg 47% 63%) 1%, hsl(174deg 41% 60%) 6%, hsl(174deg 36% 56%) 17%, hsl(174deg 32% 52%) 34%, hsl(174deg 30% 49%) 57%, hsl(175deg 30% 45%) 81%, hsl(175deg 31% 42%) 100% );
-    height: 26.5vh;
+    height: 33vh;
     display: flex;
     flex-direction: column;
     padding: 1rem;
     border-bottom: 2px solid var(--sandy-brown);
-    margin-bottom: 7rem;
+    margin-bottom: 13rem;
 }
 }
 
