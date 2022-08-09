@@ -72,6 +72,7 @@ input[type="text"]:focus {
   border-radius: 5px;
   position: relative;
   transition: 300ms;
+  margin-bottom: 2rem;
 }
 
 .accordion-bar-hover {
@@ -184,7 +185,6 @@ input[type="text"]:focus {
   flex-wrap: wrap;
   transition: 300ms ease;
 }
-
 
 .spinner {
   animation-name: spin;

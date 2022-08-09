@@ -14,6 +14,10 @@
         }
     }
 
+    function toggleAccordion(param) {
+        param.classList.toggle('accordion-bar-hover')
+    }
+
     function changeVisibilityOnSize(obj) {
         let x = obj
         if (window.innerWidth < 1600) {
@@ -37,7 +41,7 @@
 
     topBar.addEventListener('click', toggleHidden);
     topBar.addEventListener('mouseover', toggleHidden);
-    // bottomBar.addEventListener('click', toggleStateBottom);
-    // bottomBar.addEventListener('mouseover', toggleStateBottom)
+    bottomBar.addEventListener('click', toggleAccordion);
+    bottomBar.addEventListener('mouseover', toggleAccordion)
 
 })();
