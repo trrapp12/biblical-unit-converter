@@ -23,17 +23,19 @@
 
     window.addEventListener('resize', () => {
 
-        // if (!timeout) return;
+        if (!timeout) {
+            return;
+        } else {
+            timeout = false;
+            setTimeout(() => {
+                
+                changeVisibilityOnSize(rightAligned);
+                changeVisibilityOnSize(hebrewWords);
+                timeout = true;
+            } , 500);
         
-        // timeout = false;
-
-        setTimeout(()=> {
-            changeVisibilityOnSize(hebrewWords);
-            changeVisibilityOnSize(rightAligned);
-            
-        }, 600);
-
-        // timeout = true;
+        }
+        clearTimeout(timeout);
     });
 
     function toggleAccordion(obj) {
