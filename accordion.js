@@ -7,20 +7,26 @@
 
     function iterateObject (obj) {
         console.log(obj)
-        if (window.innerWidth < 1200) {
+        if (window.innerWidth < 1600) {
             for (let [key, value] of Object.entries(obj)) {
                 value.classList.add('hidden')
             }
 
-        } else if (window.innerWidth > 1200) {
+        } else if (window.innerWidth > 1600) {
             for (let [key, value] of Object.entries(obj)) {
                 value.classList.remove('hidden')
             }
         }
     }
 
-    function toggleState(obj) {
-        for (let [key, value] of Object.entries(obj)) {
+    function toggleStateTop() {
+        for (let [key, value] of Object.entries(hebrewWords)) {
+            value.classList.toggle('hidden')
+        }
+    }
+
+    function toggleStateBottom() {
+        for (let [key, value] of Object.entries(rightAligned)) {
             value.classList.toggle('hidden')
         }
     }
@@ -31,8 +37,6 @@
         iterateObject(rightAligned);
     })
 
-    topBar.addEventListener('click', toggleState(topBar))
-    bottomBar.addEventListener('click', toggleState(rightAligned))
-
-    
+    topBar.addEventListener('click', toggleStateTop)
+    bottomBar.addEventListener('click', toggleStateBottom)   
 })();
