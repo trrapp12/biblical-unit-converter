@@ -1,42 +1,43 @@
-(()=>{
-    // const sideBars = document.getElementsByClassName('accordion-bar');
+(() => {
+    // classNames returns an Object
     const hebrewWords = document.getElementsByClassName('hebrew');
     const rightAligned = document.getElementsByClassName('right-align');
+    // Id's
     const topBar = document.getElementById('english-side-bar');
     const bottomBar = document.getElementById('hebrew-side-bar');
 
-    function iterateObject (obj) {
-        console.log(obj)
+    let timeout = true;
+
+    function toggleHidden(param) {
+        for (let [key, value] of Object.entries(param)) {
+            value.classList.toggle('hidden')
+        }
+    }
+
+    function changeVisibilityOnSize(obj) {
+        let x = obj
         if (window.innerWidth < 1600) {
-            for (let [key, value] of Object.entries(obj)) {
-                value.classList.add('hidden')
-            }
-
+            toggleHidden(x)
         } else if (window.innerWidth > 1600) {
-            for (let [key, value] of Object.entries(obj)) {
-                value.classList.remove('hidden')
-            }
+            toggleHidden(x)
         }
     }
-
-    function toggleStateTop() {
-        for (let [key, value] of Object.entries(hebrewWords)) {
-            value.classList.toggle('hidden')
-        }
-    }
-
-    function toggleStateBottom() {
-        for (let [key, value] of Object.entries(rightAligned)) {
-            value.classList.toggle('hidden')
-        }
-    }
-
 
     window.addEventListener('resize', () => {
-        iterateObject(hebrewWords);
-        iterateObject(rightAligned);
+        console.log(`window event listener ${timeout}`)
+        if (!timeout) return;
+        
+        timeout = false;
+
+        setTimeout(()=> {
+            changeVisibilityOnSize(hebrewWords);
+            changeVisibilityOnSize(rightAligned);
+        }, 300)
     })
 
-    topBar.addEventListener('click', toggleStateTop)
-    bottomBar.addEventListener('click', toggleStateBottom)   
+    topBar.addEventListener('click', toggleHidden);
+    topBar.addEventListener('mouseover', toggleHidden);
+    // bottomBar.addEventListener('click', toggleStateBottom);
+    // bottomBar.addEventListener('mouseover', toggleStateBottom)
+
 })();
