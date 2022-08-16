@@ -4,14 +4,9 @@
     const rightAligned = document.getElementsByClassName('right-align');
     const combinedElements = [...hebrewWords, ...rightAligned];
 
+   //create a function that will iterate through object and toggle classes 
 
-    
-
-    //create a function that will iterate through object and toggle classes 
-
-
-
-    function toggleHidden(param) {
+   function toggleHidden(param) {
         for (let [key, value] of Object.entries(param)) {
             value.classList.toggle('hidden');
         }
@@ -73,5 +68,3 @@
         setInitialClass(rightAligned);
     })
 })();
-
-
