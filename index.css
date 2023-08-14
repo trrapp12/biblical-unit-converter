@@ -203,6 +203,7 @@ input[type="text"]:focus {
   justify-content: center;
   gap: 1rem;
   transition: 300ms ease;
+  flex-wrap: wrap;
 }
 
 .spinner {
@@ -257,27 +258,34 @@ p {
 
 /* =============================== MEDIA QUERIES  =============================== */
 
-/* @media (min-width: 801px) and (max-width: 16500px) { 
+@media (min-width: 1px) and (max-width: 700px) {
 
-  input[type="text"], input[type="text"]:focus {
-    border: var(--sandy-brown) solid 5px 2px 2px 5px;
-    background-color: rgba(0, 0, 0, 0);
-    width: 50%;
-    font-size: 10rem;
-    height: 30vh;
-    width: 30vh;
-    border-radius: 50%;
-    padding: calc((30vh / 2) - 3rem);
-    color: var(--sandy-brown);
-    outline: none;
-    border-radius: 50%;
-    box-shadow: 7px 7px 16px #8c735d, -2px 0px 6px var(--sandy-brown);
-    mix-blend-mode: normal;
-    margin: auto;
-    display: block;
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 40px;
   }
 
-} */
+  input[type="text"],
+  input[type="text"]:focus {
+    width: 100%;
+  }
+
+  .eight-together {
+    width: 100%;
+  }
+
+  .input--label {
+    width: 100%;
+  }
+
+  .input--text {
+    width: 100%;
+  }
+
+}
 
 
 @media (max-width: 1200px) {
