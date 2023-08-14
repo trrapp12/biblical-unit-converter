@@ -20,7 +20,7 @@
   scroll-behavior: smooth;
 }
 
-.input-container::placeholder {
+input[type="text"]::placeholder {
   font-size: 1em;
   color: var(--sandy-brown);
 }
@@ -76,7 +76,7 @@ input[type="text"]:focus {
   max-height: 26rem;
   width: 30vh;
   border-radius: 50%;
-  padding: 8rem;
+  /* padding: 8rem; */
   color: var(--sandy-brown);
   outline: none;
   border-radius: 50%;
@@ -343,7 +343,7 @@ p {
     height: 30vh;
     width: 30vh;
     border-radius: 50%;
-    padding: calc((30vh / 2) - 3rem);
+    /* padding: calc((30vh / 2) - 3rem); */
     color: var(--sandy-brown);
     outline: none;
     border-radius: 50%;
@@ -443,7 +443,7 @@ p {
     height: 20vh;
     width: 20vh;
     border-radius: 50%;
-    padding: calc((30vh / 2) - 3rem);
+    /* padding: calc((30vh / 2) - 3rem); */
     color: var(--sandy-brown);
     outline: none;
     border-radius: 50%;
