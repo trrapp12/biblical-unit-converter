@@ -20,7 +20,7 @@
   scroll-behavior: smooth;
 }
 
-::placeholder {
+.input-container::placeholder {
   font-size: 1em;
   color: var(--sandy-brown);
 }

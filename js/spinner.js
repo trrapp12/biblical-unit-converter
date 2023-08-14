@@ -13,6 +13,7 @@
     function removeSpin (el) {
       el.style.animationName = ''
       el.style.animationDuration = '';
+      document.getElementById('amount').focus();
       // console.log('spinner removed')
     }
   
