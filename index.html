@@ -1,170 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8"/>
-    <title>Bible Conversion Tool</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Noto+Serif+Hebrew:wght@200;400&family=Raleway:wght@100;200;300;400;500&display=swap" rel="stylesheet">
-    <link href="index.css" rel="stylesheet">
-  </head>
-  <body>
-    <!-- display flex -->
-    <main class="container">
-      <header class="input-container">
-        <!-- display flex, flex-direction: column -->
-        <h1>BIBLICAL DISTANCES</h1>
-        <!--flex child 1 -->
-        <div>
-          <!--flex child 2 -->
-          <div class="input" id="input-spin">
-            <p class="eight-together">אַרבַּעְתֵּנוּ</p>
-            <label id="input--label" class="input--label" for="amount"></label>
-            <input class="input--text" type="text" id="amount" name="amount">
-            <p class="eight-together">שְׁמוֹנָתֵנוּ</p>
-          </div>
-          <!-- input closure -->
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <title>Bible Conversion Tool</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Noto+Serif+Hebrew:wght@200;400&family=Raleway:wght@100;200;300;400;500&display=swap"
+    rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- display flex -->
+  <main class="container">
+    <header class="input-container">
+      <!-- display flex, flex-direction: column -->
+      <h1>BIBLICAL DISTANCES</h1>
+      <!--flex child 1 -->
+      <div>
+        <!--flex child 2 -->
+        <div class="input" id="input-spin">
+          <p class="eight-together">אַרבַּעְתֵּנוּ</p>
+          <label id="input--label" class="input--label" for="amount"></label>
+          <input class="input--text" type="text" id="amount" name="amount" placeholder="number">
+          <p class="eight-together">שְׁמוֹנָתֵנוּ</p>
         </div>
-      </header>
-      <!-- input-container closure -->
-      <div class="output">
-        <!-- unused class -->
-        <div class="category">
-          <!-- grid container -->
-          <!-- start of the left column -->
-          <aside class="english-side-bar accordion-bar" id="english-side-bar">
-            <!-- even though the class isn't used, it's name helps identify which of the three columns it is, so I decided to keep it in -->
-              <h2 class="hebrew">(אצבע (אצבעות / Etzba (width of a thumb) </h2>
-              <h2 class="hebrew">(טפח (טפחים / Tefach (width of a hand)</h2>
-              <h2 class="hebrew">(זרת (זרות / Melo Heseit (thumb to index finger)</h2>
-              <h2 class="hebrew">(אמה (אמות / Zeret (Span)</h2>
-              <h2 class="hebrew">Ris (Stadium)</h2>
-              <h2 class="hebrew">Mil (Mile)</h2>
-              <h2 class="hebrew">parsa'ot (parasang)</h2>
-          </aside>
-          <!-- end of the left column -->
-          <!-- start of the middle column -->
-          <div class="middle column" id="middle-column">
-            <!-- category child, column is an unused class -->
-            <!-- start of grid areas -->
-            <!-- start grid area 1 -->
-            <div>
-              <div class="conversion-container">
-                <!-- and this within grid-area? -->
-                <div class="margin-left">
-                  <!-- bind class is used only as queryselectors in JS -->
-                  <p>Feet to Etzba: <span class="bind">0</span> feet = <span id="conversion--1">0</span> Etzba&nbsp;&nbsp;&nbsp; </p>
-                </div>
-                <div class="center-line">
-                  <p class="center-p"></p>
-                </div>
-                <div class="margin-right">
-                  <p>&nbsp;&nbsp;&nbsp;Etzba to Feet: <span class="bind">0</span> Etzba = <span id="conversion--2">0</span> feet </p>
-                </div>
-              </div>
-              <div class="conversion-container">
-                <!-- and this within grid-area? -->
-                <div class="margin-left">
-                  <p>Feet to Tefach: <span class="bind">0</span> feet = <span id="conversion--3">0</span> Tefach&nbsp;&nbsp;&nbsp; </p>
-                </div>
-                <div class="center-line">
-                  <p class="center-p"></p>
-                </div>
-                <div class="margin-right">
-                  <p>&nbsp;&nbsp;&nbsp;Tefach to Feet: <span class="bind">0</span> Tefach = <span id="conversion--4">0</span> feet </p>
-                </div>
-              </div>
-            </div>
-            <!-- end grid area 1 -->
-            <!-- start grid area 2 -->
-            <div>
-              <div class="conversion-container">
-                <div class="margin-left">
-                  <p>Feet to Zeret: <span class="bind">0</span> feet = <span id="conversion--5">0</span> Zeret (Zarot)&nbsp;&nbsp;&nbsp; </p>
-                </div>
-                <div class="center-line">
-                  <p class="center-p"></p>
-                </div>
-                <div class="margin-right">
-                  <!-- margin-right > p is used in CSS, but not the margin-right class by itself -->
-                  <p>&nbsp;&nbsp;&nbsp;Zeret to Feet: <span class="bind">0</span> Zeret (Zarot) = <span id="conversion--6">0</span> feet </p>
-                </div>
-              </div>
-              <div class="conversion-container">
-                <div class="margin-left">
-                  <!-- margin-left > p is used in CSS, but not margin-left class by itself -->
-                  <p>Feet to Amah: <span class="bind">0</span> feet = <span id="conversion--7">0</span> Amah (Amot)&nbsp;&nbsp;&nbsp; </p>
-                </div>
-                <div class="center-line">
-                  <p class="center-p"></p>
-                </div>
-                <div class="margin-right">
-                  <p>&nbsp;&nbsp;&nbsp;Amah to Feet: <span class="bind">0</span> Amah (Amot) = <span id="conversion--8">0</span> feet </p>
-                </div>
-              </div>
-            </div>
-            <!-- end grid area 2 -->
-            <!-- start grid area 3 -->
-            <div>
-              <div class="conversion-container">
-                <div class="margin-left">
-                  <p>Feet to Ris: <span class="bind">0</span> feet = <span id="conversion--9">0</span> Ris&nbsp;&nbsp;&nbsp; </p>
-                </div>
-                <div class="center-line">
-                  <p class="center-p"></p>
-                </div>
-                <div class="margin-right">
-                  <p>&nbsp;&nbsp;&nbsp;Ris to Feet: <span class="bind">0</span> Ris = <span id="conversion--10">0</span> feet </p>
-                </div>
-              </div>
-              <div class="conversion-container">
-                <div class="margin-left">
-                  <p>Feet to Mil: <span class="bind">0</span> feet = <span id="conversion--11">0</span> Mil (Milin)&nbsp;&nbsp;&nbsp; </p>
-                </div>
-                <div class="center-line">
-                  <p class="center-p"></p>
-                </div>
-                <div class="margin-right">
-                  <p>&nbsp;&nbsp;&nbsp;Mil to Feet: <span class="bind">0</span> Mil (Milin) = <span id="conversion--12">0</span> feet </p>
-                </div>
-              </div>
-            </div>
-            <!-- end grid area 3 -->
-            <!-- start grid area 4 -->
-            <div>
-              <div class="conversion-container">
-                <div class="margin-left">
-                  <p>Feet to Parasa: <span class="bind">0</span> feet = <span id="conversion--13">0</span> parasa (parsa'ot)&nbsp;&nbsp;&nbsp; </p>
-                </div>
-                <div class="center-line">
-                  <p class="center-p"></p>
-                </div>
-                <div class="margin-right">
-                  <p>&nbsp;&nbsp;&nbsp;Parasa to Feet: <span class="bind">0</span> parasa (parsa'ot) = <span id="conversion--14">0</span> feet </p>
-                </div>
-              </div>
-            </div>
-            <!-- end grid area 4 -->
-            <!-- end of grid areas -->
-          </div>
-          <!-- end of middle column -->
-          <!-- start of right column -->
-          <aside class="hebrew-side-bar accordion-bar" id="hebrew-side-bar">
-            <!-- hebrew-side-bar > p is used, but not hebrew-side-bar exclusively -->
-              <p class="right-align">The Israelites originally measured length by the finger, hand, arm, span, foot, and pace. However, these are different for everyone. Eventually they had to create a common standard. This created a system that has different names and amounts for measuring lengths, making it hard for us to understand it today.</p>
-              <p class="right-align">This calculator is an attempt to make the otherwise obscure measurements of the bible easily understandable by converting them into a unit more commonly understood. -- Trevor R.</p>  
-          </aside>
-          <!-- end of right column -->
-        </div>
-        <!-- end of category -->
+        <!-- input closure -->
       </div>
-      <!-- end of output -->
-    </main>
-    <!-- end of container-->
-    <script src="js/index.js"></script>
-    <script src="js/font-size.js"></script>
-    <script src="js/spinner.js"></script>
-    <script src="js/accordion.js"></script>
-  </body>
+    </header>
+    <!-- input-container closure -->
+    <div class="output">
+      <!-- unused class -->
+      <div class="category">
+        <!-- grid container -->
+        <!-- start of the left column -->
+        <aside class="english-side-bar accordion-bar" id="english-side-bar">
+          <!-- even though the class isn't used, it's name helps identify which of the three columns it is, so I decided to keep it in -->
+          <h2 class="hebrew">(אצבע (אצבעות / Etzba (width of a thumb) </h2>
+          <h2 class="hebrew">(טפח (טפחים / Tefach (width of a hand)</h2>
+          <h2 class="hebrew">(זרת (זרות / Melo Heseit (thumb to index finger)</h2>
+          <h2 class="hebrew">(אמה (אמות / Zeret (Span)</h2>
+          <h2 class="hebrew">Ris (Stadium)</h2>
+          <h2 class="hebrew">Mil (Mile)</h2>
+          <h2 class="hebrew">parsa'ot (parasang)</h2>
+        </aside>
+        <!-- end of the left column -->
+        <!-- start of the middle column -->
+        <div class="middle column" id="middle-column">
+          <!-- category child, column is an unused class -->
+          <!-- start of grid areas -->
+          <!-- start grid area 1 -->
+          <div>
+            <div class="conversion-container">
+              <!-- and this within grid-area? -->
+              <div class="margin-left">
+                <!-- bind class is used only as queryselectors in JS -->
+                <p>Feet to Etzba: <span class="bind">0</span> feet = <span id="conversion--1">0</span>
+                  Etzba&nbsp;&nbsp;&nbsp; </p>
+              </div>
+              <div class="center-line">
+                <p class="center-p"></p>
+              </div>
+              <div class="margin-right">
+                <p>&nbsp;&nbsp;&nbsp;Etzba to Feet: <span class="bind">0</span> Etzba = <span
+                    id="conversion--2">0</span> feet </p>
+              </div>
+            </div>
+            <div class="conversion-container">
+              <!-- and this within grid-area? -->
+              <div class="margin-left">
+                <p>Feet to Tefach: <span class="bind">0</span> feet = <span id="conversion--3">0</span>
+                  Tefach&nbsp;&nbsp;&nbsp; </p>
+              </div>
+              <div class="center-line">
+                <p class="center-p"></p>
+              </div>
+              <div class="margin-right">
+                <p>&nbsp;&nbsp;&nbsp;Tefach to Feet: <span class="bind">0</span> Tefach = <span
+                    id="conversion--4">0</span> feet </p>
+              </div>
+            </div>
+          </div>
+          <!-- end grid area 1 -->
+          <!-- start grid area 2 -->
+          <div>
+            <div class="conversion-container">
+              <div class="margin-left">
+                <p>Feet to Zeret: <span class="bind">0</span> feet = <span id="conversion--5">0</span> Zeret
+                  (Zarot)&nbsp;&nbsp;&nbsp; </p>
+              </div>
+              <div class="center-line">
+                <p class="center-p"></p>
+              </div>
+              <div class="margin-right">
+                <!-- margin-right > p is used in CSS, but not the margin-right class by itself -->
+                <p>&nbsp;&nbsp;&nbsp;Zeret to Feet: <span class="bind">0</span> Zeret (Zarot) = <span
+                    id="conversion--6">0</span> feet </p>
+              </div>
+            </div>
+            <div class="conversion-container">
+              <div class="margin-left">
+                <!-- margin-left > p is used in CSS, but not margin-left class by itself -->
+                <p>Feet to Amah: <span class="bind">0</span> feet = <span id="conversion--7">0</span> Amah
+                  (Amot)&nbsp;&nbsp;&nbsp; </p>
+              </div>
+              <div class="center-line">
+                <p class="center-p"></p>
+              </div>
+              <div class="margin-right">
+                <p>&nbsp;&nbsp;&nbsp;Amah to Feet: <span class="bind">0</span> Amah (Amot) = <span
+                    id="conversion--8">0</span> feet </p>
+              </div>
+            </div>
+          </div>
+          <!-- end grid area 2 -->
+          <!-- start grid area 3 -->
+          <div>
+            <div class="conversion-container">
+              <div class="margin-left">
+                <p>Feet to Ris: <span class="bind">0</span> feet = <span id="conversion--9">0</span>
+                  Ris&nbsp;&nbsp;&nbsp; </p>
+              </div>
+              <div class="center-line">
+                <p class="center-p"></p>
+              </div>
+              <div class="margin-right">
+                <p>&nbsp;&nbsp;&nbsp;Ris to Feet: <span class="bind">0</span> Ris = <span id="conversion--10">0</span>
+                  feet </p>
+              </div>
+            </div>
+            <div class="conversion-container">
+              <div class="margin-left">
+                <p>Feet to Mil: <span class="bind">0</span> feet = <span id="conversion--11">0</span> Mil
+                  (Milin)&nbsp;&nbsp;&nbsp; </p>
+              </div>
+              <div class="center-line">
+                <p class="center-p"></p>
+              </div>
+              <div class="margin-right">
+                <p>&nbsp;&nbsp;&nbsp;Mil to Feet: <span class="bind">0</span> Mil (Milin) = <span
+                    id="conversion--12">0</span> feet </p>
+              </div>
+            </div>
+          </div>
+          <!-- end grid area 3 -->
+          <!-- start grid area 4 -->
+          <div>
+            <div class="conversion-container">
+              <div class="margin-left">
+                <p>Feet to Parasa: <span class="bind">0</span> feet = <span id="conversion--13">0</span> parasa
+                  (parsa'ot)&nbsp;&nbsp;&nbsp; </p>
+              </div>
+              <div class="center-line">
+                <p class="center-p"></p>
+              </div>
+              <div class="margin-right">
+                <p>&nbsp;&nbsp;&nbsp;Parasa to Feet: <span class="bind">0</span> parasa (parsa'ot) = <span
+                    id="conversion--14">0</span> feet </p>
+              </div>
+            </div>
+          </div>
+          <!-- end grid area 4 -->
+          <!-- end of grid areas -->
+        </div>
+        <!-- end of middle column -->
+        <!-- start of right column -->
+        <aside class="hebrew-side-bar accordion-bar" id="hebrew-side-bar">
+          <!-- hebrew-side-bar > p is used, but not hebrew-side-bar exclusively -->
+          <p class="right-align">The Israelites originally measured length by the finger, hand, arm, span, foot, and
+            pace. However, these are different for everyone. Eventually they had to create a common standard. This
+            created a system that has different names and amounts for measuring lengths, making it hard for us to
+            understand it today.</p>
+          <p class="right-align">This calculator is an attempt to make the otherwise obscure measurements of the bible
+            easily understandable by converting them into a unit more commonly understood. -- Trevor R.</p>
+        </aside>
+        <!-- end of right column -->
+      </div>
+      <!-- end of category -->
+    </div>
+    <!-- end of output -->
+  </main>
+  <!-- end of container-->
+  <script src="js/index.js"></script>
+  <script src="js/font-size.js"></script>
+  <script src="js/spinner.js"></script>
+  <script src="js/accordion.js"></script>
+</body>
+
 </html>

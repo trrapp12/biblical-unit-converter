@@ -1,6 +1,6 @@
 // IFFE creates natural lexical scoping so the global variables in this file don't accidentally pollute name space of other JS files
 (()=>{
-  
+  document.getElementById('amount').focus();
   // establish variables
   const data = {
     value: '',

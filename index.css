@@ -20,6 +20,23 @@
   scroll-behavior: smooth;
 }
 
+::placeholder {
+  font-size: 1em;
+  color: var(--sandy-brown);
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  font-size: 1em;
+  color: var(--sandy-brown);
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  font-size: 1em;
+  color: var(--sandy-brown);
+}
+
 /* =============================== ELEMENTS  =============================== */
 
 body {
@@ -49,7 +66,7 @@ h2 {
   color: var(--neutral-brown);
 }
 
-input[type="text"], 
+input[type="text"],
 input[type="text"]:focus {
   border: var(--sandy-brown) solid 5px 2px 2px 5px;
   background-color: rgba(0, 0, 0, 0);
@@ -89,17 +106,15 @@ input[type="text"]:focus {
 /* =============================== HEADER SECTION  =============================== */
 
 .input-container {
-  background-image: linear-gradient(
-    0deg,
-    hsl(174deg 54% 67%) 0%,
-    hsl(174deg 47% 63%) 1%,
-    hsl(174deg 41% 60%) 6%,
-    hsl(174deg 36% 56%) 17%,
-    hsl(174deg 32% 52%) 34%,
-    hsl(174deg 30% 49%) 57%,
-    hsl(175deg 30% 45%) 81%,
-    hsl(175deg 31% 42%) 100%
-  );
+  background-image: linear-gradient(0deg,
+      hsl(174deg 54% 67%) 0%,
+      hsl(174deg 47% 63%) 1%,
+      hsl(174deg 41% 60%) 6%,
+      hsl(174deg 36% 56%) 17%,
+      hsl(174deg 32% 52%) 34%,
+      hsl(174deg 30% 49%) 57%,
+      hsl(175deg 30% 45%) 81%,
+      hsl(175deg 31% 42%) 100%);
   height: 30vh;
   display: flex;
   flex-direction: column;
@@ -207,8 +222,8 @@ p {
   margin-bottom: 0.5rem;
 }
 
-.margin-right > p,
-.margin-left > p {
+.margin-right>p,
+.margin-left>p {
   line-height: 2rem;
 }
 
@@ -226,7 +241,7 @@ p {
 
 /* =============================== RIGHT COLUMN  =============================== */
 
-.hebrew-side-bar > p {
+.hebrew-side-bar>p {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
   color: var(--teal);
@@ -270,7 +285,7 @@ p {
   .category {
     display: block;
     padding: 1rem;
-}
+  }
 
   .container {
     width: 80vw;
@@ -300,7 +315,7 @@ p {
     padding: 1.5rem 0rem;
   }
 
-  .hebrew-side-bar > p {
+  .hebrew-side-bar>p {
     font-family: "Raleway", sans-serif;
     font-size: 1rem;
     color: var(--teal);
@@ -319,7 +334,8 @@ p {
     letter-spacing: 10px;
   }
 
-  input[type="text"], input[type="text"]:focus {
+  input[type="text"],
+  input[type="text"]:focus {
     border: var(--sandy-brown) solid 5px 2px 2px 5px;
     background-color: rgba(0, 0, 0, 0);
     width: 50%;
@@ -335,13 +351,14 @@ p {
     mix-blend-mode: normal;
     margin: 0rem auto 3vh auto;
     display: block;
-}
+  }
 
-.middle {
-  padding: 0rem;
-}
+  .middle {
+    padding: 0rem;
+  }
 
-  .margin-right > p, .margin-left > p {
+  .margin-right>p,
+  .margin-left>p {
     line-height: 1.5rem;
   }
 
@@ -358,29 +375,27 @@ p {
 
 @media (min-width: 300px) and (max-width: 1208px) {
   .input-container {
-    background-image: linear-gradient( 0deg, hsl(174deg 54% 67%) 0%, hsl(174deg 47% 63%) 1%, hsl(174deg 41% 60%) 6%, hsl(174deg 36% 56%) 17%, hsl(174deg 32% 52%) 34%, hsl(174deg 30% 49%) 57%, hsl(175deg 30% 45%) 81%, hsl(175deg 31% 42%) 100% );
+    background-image: linear-gradient(0deg, hsl(174deg 54% 67%) 0%, hsl(174deg 47% 63%) 1%, hsl(174deg 41% 60%) 6%, hsl(174deg 36% 56%) 17%, hsl(174deg 32% 52%) 34%, hsl(174deg 30% 49%) 57%, hsl(175deg 30% 45%) 81%, hsl(175deg 31% 42%) 100%);
     height: 33vh;
     display: flex;
     flex-direction: column;
     padding: 1rem;
     border-bottom: 2px solid var(--sandy-brown);
     margin-bottom: 13rem;
-}
+  }
 }
 
 @media (min-width: 1209px) and (max-width: 1999px) {
   .input-container {
-    background-image: linear-gradient(
-    0deg,
-    hsl(174deg 54% 67%) 0%,
-    hsl(174deg 47% 63%) 1%,
-    hsl(174deg 41% 60%) 6%,
-    hsl(174deg 36% 56%) 17%,
-    hsl(174deg 32% 52%) 34%,
-    hsl(174deg 30% 49%) 57%,
-    hsl(175deg 30% 45%) 81%,
-    hsl(175deg 31% 42%) 100%
-  );
+    background-image: linear-gradient(0deg,
+        hsl(174deg 54% 67%) 0%,
+        hsl(174deg 47% 63%) 1%,
+        hsl(174deg 41% 60%) 6%,
+        hsl(174deg 36% 56%) 17%,
+        hsl(174deg 32% 52%) 34%,
+        hsl(174deg 30% 49%) 57%,
+        hsl(175deg 30% 45%) 81%,
+        hsl(175deg 31% 42%) 100%);
     height: 25rem;
     display: flex;
     flex-direction: column;
@@ -391,17 +406,15 @@ p {
 
 @media (min-width: 2000px) {
   .input-container {
-    background-image: linear-gradient(
-    0deg,
-    hsl(174deg 54% 67%) 0%,
-    hsl(174deg 47% 63%) 1%,
-    hsl(174deg 41% 60%) 6%,
-    hsl(174deg 36% 56%) 17%,
-    hsl(174deg 32% 52%) 34%,
-    hsl(174deg 30% 49%) 57%,
-    hsl(175deg 30% 45%) 81%,
-    hsl(175deg 31% 42%) 100%
-  );
+    background-image: linear-gradient(0deg,
+        hsl(174deg 54% 67%) 0%,
+        hsl(174deg 47% 63%) 1%,
+        hsl(174deg 41% 60%) 6%,
+        hsl(174deg 36% 56%) 17%,
+        hsl(174deg 32% 52%) 34%,
+        hsl(174deg 30% 49%) 57%,
+        hsl(175deg 30% 45%) 81%,
+        hsl(175deg 31% 42%) 100%);
     height: 17.5rem;
     display: flex;
     flex-direction: column;
@@ -412,7 +425,7 @@ p {
 
 @media (max-width: 299px) {
   .input-container {
-    background-image: linear-gradient( 0deg, hsl(174deg 54% 67%) 0%, hsl(174deg 47% 63%) 1%, hsl(174deg 41% 60%) 6%, hsl(174deg 36% 56%) 17%, hsl(174deg 32% 52%) 34%, hsl(174deg 30% 49%) 57%, hsl(175deg 30% 45%) 81%, hsl(175deg 31% 42%) 100% );
+    background-image: linear-gradient(0deg, hsl(174deg 54% 67%) 0%, hsl(174deg 47% 63%) 1%, hsl(174deg 41% 60%) 6%, hsl(174deg 36% 56%) 17%, hsl(174deg 32% 52%) 34%, hsl(174deg 30% 49%) 57%, hsl(175deg 30% 45%) 81%, hsl(175deg 31% 42%) 100%);
     height: 24.5vh;
     display: flex;
     flex-direction: column;
@@ -421,7 +434,8 @@ p {
     margin-bottom: 7rem;
   }
 
-  input[type="text"], input[type="text"]:focus {
+  input[type="text"],
+  input[type="text"]:focus {
     border: var(--sandy-brown) solid 5px 2px 2px 5px;
     background-color: rgba(0, 0, 0, 0);
     width: 50%;
