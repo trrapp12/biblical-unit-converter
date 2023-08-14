@@ -1,6 +1,9 @@
 ﻿# bible-conversion-tool
 
- 
+### Contributors: Trevor Rapp
+
+*this was a solo project completed as part of the [Scrimba](https://scrimba.com) curriculum, meaning the course established the requirements of the assignment, but all work is completely my own.*  
+
  ---
 <br>
 
@@ -26,15 +29,18 @@ https://user-images.githubusercontent.com/11747875/171572141-4bfc38f1-316e-4cfe-
 
 ### Description:
 
+>26. Behold the fowls of the air: for they sow not, neither do they reap, nor gather into barns; yet your heavenly Father feedeth them. Are ye not much better than they?
+>27. Which of you by taking thought can add one cubit unto his stature?
+>28. And why take ye thought for raiment? Consider the lilies of the field, how they grow; they toil not, neither do they spin:
+>
+> --Jesus Christ, Matthew 6: 26-27
 
-This is a simple conversion tool, but instead of imperial to metric I wanted to answer something a little more fun. Like how many feet are in a cubit? 
 
-<br>
-<br>
+This assignment called for a conversion tool, but instead of imperial to metric I wanted to answer something a little more fun. Have you ever wondered how many centimeters were in a cubit? 
 
 ---
 
-### Project demonstrates the following:
+### THIS PROJECT DEMONSTRATES:
 
 
 - [X] Two-way data-binding with vanilla Javascript.
@@ -43,22 +49,20 @@ This is a simple conversion tool, but instead of imperial to metric I wanted to 
 
 - [X] Event listeners and DOM manipulation.
 
-<br>
-<br>
+---
+
+### MY OWN PERSONAL CONTRIBUTIONS INCLUDED 
+
+- [X] all work is my own.  All contributions are my own as well.
 
 ---
 
-### Project published at: 
+### ATTRIBUTIONS
 
-
-[Bible Conversion Tool](https://trrapp12.github.io/bible-conversion-tool/)
-
-<br>
-<br>
+No attributions applicable for this project.
 
 ---
 
-### More Information:
+### YOU CAN FIND ME AT:
 
-
-\**For more information see my [LinkedIn](https://www.linkedin.com/in/trevor-rapp-042a1037) or return to my [Github](https://github.com/trrapp12)*
+\**For more information see my [LinkedIn](https://www.linkedin.com/in/trevor-rapp-042a1037), or return to my [Github](https://github.com/trrapp12)*
