@@ -62,6 +62,12 @@ To use the app simply click on the ```View Project``` button or visit <a href="h
 
 ---
 
+### CHALLENGES I OVERCAME
+
+<br/>
+
+---
+
 ### MY OWN PERSONAL CONTRIBUTIONS INCLUDED 
 
 - [X] all work is my own.  All contributions are my own as well.
