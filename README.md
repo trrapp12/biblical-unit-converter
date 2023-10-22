@@ -41,6 +41,14 @@ https://user-images.githubusercontent.com/11747875/171572141-4bfc38f1-316e-4cfe-
 
 ---
 
+### QUICKSTART GUIDE
+
+To use the app simply click on the ```View Project``` button or visit <a href="https://trrapp12.github.io/groovy-blocks/">https://trrapp12.github.io/groovy-blocks/</a>. 
+
+<br/>
+
+---
+
 ### THIS PROJECT DEMONSTRATES:
 
 
