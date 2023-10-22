@@ -58,17 +58,23 @@ To use the app simply click on the ```View Project``` button or visit <a href="h
 
 - [X] Event listeners and DOM manipulation.
 
+<br/>
+
 ---
 
 ### MY OWN PERSONAL CONTRIBUTIONS INCLUDED 
 
 - [X] all work is my own.  All contributions are my own as well.
 
+<br/>
+
 ---
 
 ### ATTRIBUTIONS
 
 No attributions applicable for this project.
+
+<br/>
 
 ---
 
