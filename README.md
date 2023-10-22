@@ -43,7 +43,7 @@ https://user-images.githubusercontent.com/11747875/171572141-4bfc38f1-316e-4cfe-
 
 ### QUICKSTART GUIDE
 
-To use the app simply click on the ```View Project``` button or visit <a href="https://trrapp12.github.io/bible-conversion-tool/">https://trrapp12.github.io/bible-conversion-tool.com</a>. 
+To use the app simply click on the ```View Project``` button or visit <a href="https://trrapp12.github.io/bible-conversion-tool/">https://trrapp12.github.io/bible-conversion-tool/</a>. 
 
 <br/>
 
