@@ -2,7 +2,7 @@
 
 ### Contributors: Trevor Rapp
 
-*this was a solo project completed as part of the [Scrimba](https://scrimba.com) curriculum, meaning the course established the requirements of the assignment, but all work is completely my own.*  
+*All work is completely my own.  This was a Solo project completed as part of the [Scrimba](https://scrimba.com) curriculum, meaning only the requirements of the assignment were given.*
 
 ---
  
@@ -52,7 +52,7 @@ To use the app simply click on the ```View Project``` button or visit <a href="h
 
 ---
 
-### THIS PROJECT DEMONSTRATES:
+### THIS PROJECT DEMONSTRATES
 
 
 - [X] Two-way data-binding with vanilla Javascript.
@@ -66,6 +66,8 @@ To use the app simply click on the ```View Project``` button or visit <a href="h
 ---
 
 ### CHALLENGES I OVERCAME
+
+* This was a fairly straight forward project, so there were no exceptional difficulties.
 
 <br/>
 
