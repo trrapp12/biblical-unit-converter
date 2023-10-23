@@ -75,7 +75,7 @@ To use the app simply click on the ```View Project``` button or visit <a href="h
 
 ### MY OWN PERSONAL CONTRIBUTIONS INCLUDED 
 
-- [X] all work is my own.  All contributions are my own as well.
+- [X] all work is my own. 
 
 <br/>
 
@@ -83,7 +83,7 @@ To use the app simply click on the ```View Project``` button or visit <a href="h
 
 ### ATTRIBUTIONS
 
-No attributions applicable for this project.
+* No attributions applicable for this project.
 
 <br/>
 
