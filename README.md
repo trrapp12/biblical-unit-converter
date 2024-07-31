@@ -9,7 +9,7 @@ _All work is completely my own. This was a Solo project completed as part of the
 
 <br>
 
-[![Button60](https://user-images.githubusercontent.com/11747875/144651679-dc423f76-a98a-456d-8ca2-d913f0b7df12.png)](https://trrapp12.github.io/bible-conversion-tool/)
+[![Button60](https://user-images.githubusercontent.com/11747875/144651679-dc423f76-a98a-456d-8ca2-d913f0b7df12.png)](https://trrapp12.github.io/biblical-unit-converter/)
 
 <br>
 
@@ -47,7 +47,7 @@ _This assignment called for a conversion tool, but instead of imperial to metric
 
 ### QUICKSTART GUIDE
 
-To use the app simply click on the `View Project` button or visit <a href="https://trrapp12.github.io/bible-conversion-tool/">https://trrapp12.github.io/bible-conversion-tool/</a>.
+To use the app simply click on the `View Project` button or visit <a href="https://trrapp12.github.io/biblical-unit-converter/">https://trrapp12.github.io/bible-conversion-tool/</a>.
 
 <br/>
 
