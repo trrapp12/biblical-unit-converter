@@ -1,4 +1,4 @@
-﻿# bible-conversion-tool
+﻿# BIBLICAL UNIT CONVERTER
 
 ### Contributors: Trevor Rapp
 
