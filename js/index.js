@@ -1,5 +1,5 @@
 // IFFE creates natural lexical scoping so the global variables in this file don't accidentally pollute name space of other JS files
-(()=>{
+(() => {
   document.getElementById('amount').focus();
   // establish variables
   const data = {
@@ -22,7 +22,7 @@
   const feetToParasaDisplay = document.getElementById('conversion--13');
   const parasaToFeetDisplay = document.getElementById('conversion--14');
 
-  // this creates a two way data binding so the 
+  // this creates a two way data binding so the
   Object.defineProperty(data, 'prop', {
     get: function () {
       // console.log('getter called');
@@ -32,18 +32,17 @@
       // console.log('setter called');
       this.value = value;
       displayNumber();
-    }
-  })
+    },
+  });
 
   // create keyup event listener which uses our data.prop to trigger the actual binding
-  document.getElementById('amount').addEventListener('keyup', (event) => {
+  document.getElementById('amount').addEventListener('click', (event) => {
     data.prop = event.target.value;
-  })
+  });
 
   // changes all the displays
-  function displayNumber () {
-   
-    for (let i = 0; i < lengthElements.length; i ++) {
+  function displayNumber() {
+    for (let i = 0; i < lengthElements.length; i++) {
       // console.log(lengthElements[i])
       let currentNumber = data.prop;
       lengthElements[i].innerText = currentNumber;
@@ -64,63 +63,61 @@
       parasaToFeetDisplay.innerText = parasa(currentNumber, 'parasa');
     }
   }
-  
-  // creates functions that do individual conversions 
+
+  // creates functions that do individual conversions
   function etzba(amount, start) {
     if (start === 'feet') {
-      return (amount * (11.28)).toFixed(3)
+      return (amount * 11.28).toFixed(3);
     } else {
-      return (amount / (11.28)).toFixed(3)
+      return (amount / 11.28).toFixed(3);
     }
   }
 
   function tefach(amount, start) {
     if (start === 'feet') {
-      return (amount * (12 / 3.16)).toFixed(3)
+      return (amount * (12 / 3.16)).toFixed(3);
     } else {
-      return (amount * (3.16 / 12)).toFixed(3)
+      return (amount * (3.16 / 12)).toFixed(3);
     }
   }
 
   function zeret(amount, start) {
     if (start === 'feet') {
-      return (amount * (12 / 9.48)).toFixed(3)
+      return (amount * (12 / 9.48)).toFixed(3);
     } else {
-      return (amount * (9.48 / 12)).toFixed(3)
+      return (amount * (9.48 / 12)).toFixed(3);
     }
   }
 
   function amah(amount, start) {
     if (start === 'feet') {
-      return (amount * (12 / 18.96)).toFixed(3)
+      return (amount * (12 / 18.96)).toFixed(3);
     } else {
-      return (amount * (18.96 / 12)).toFixed(3)
+      return (amount * (18.96 / 12)).toFixed(3);
     }
   }
 
   function mil(amount, start) {
     if (start === 'feet') {
-      return (amount * 3145).toFixed(3)
+      return (amount * 3145).toFixed(3);
     } else {
-      return (amount / 3145).toFixed(3)
+      return (amount / 3145).toFixed(3);
     }
   }
 
   function ris(amount, start) {
     if (start === 'feet') {
-      return (amount / 421.3).toFixed(3)
+      return (amount / 421.3).toFixed(3);
     } else {
-      return (amount * 421.3).toFixed(3)
+      return (amount * 421.3).toFixed(3);
     }
   }
 
-  function parasa (amount, start) {
+  function parasa(amount, start) {
     if (start === 'feet') {
-      return (amount / 12724.8).toFixed(3)
+      return (amount / 12724.8).toFixed(3);
     } else {
-      return (amount * 12724.8).toFixed(3)
+      return (amount * 12724.8).toFixed(3);
     }
   }
-  
 })();
-
