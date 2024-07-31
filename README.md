@@ -4,7 +4,6 @@
 
 _All work is completely my own. This was a Solo project completed as part of the [Scrimba](https://scrimba.com) curriculum, meaning only the requirements of the assignment were given._
 
-new info
 
 ---
 
