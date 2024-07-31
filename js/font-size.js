@@ -29,7 +29,7 @@
           }
         } else {
           // console.log('entering else statement')
-          fontSize = 150;
+          fontSize = 32;
           setFontSize(fontSize);
           while (testFontSize(inputElement)) {
             // console.log('entering second while loop')
