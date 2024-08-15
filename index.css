@@ -68,10 +68,9 @@ h2 {
 
 input[type='number'],
 input[type='number']:focus {
-  border: 10px inset var(--sandy-brown);
   background-color: rgba(255, 255, 255, 0.9);
   width: 50%;
-  font-size: 2rem;
+  font-size: calc(2rem + 1vh);
   height: 1vh;
   /* max-height: 26rem; */
   width: 30vw;
@@ -81,6 +80,24 @@ input[type='number']:focus {
   box-shadow: 7px 7px 16px #8c735d, -2px 0px 6px var(--sandy-brown);
   mix-blend-mode: normal;
   max-width: 26rem;
+  opacity: 1;
+}
+
+#spin {
+  color: white !important;
+}
+
+input::-webkit-inner-spin-button {
+  appearance: auto;
+  display: inline-block;
+  cursor: default;
+  align-self: stretch;
+  opacity: 1;
+  /* pointer-events: none; */
+  -webkit-user-modify: read-only !important;
+  flex: 0 0 auto;
+  padding: 3rem 0.75rem;
+  border: 3px solid var(--dark-brown);
 }
 
 p > .bind {
