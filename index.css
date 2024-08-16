@@ -83,10 +83,6 @@ input[type='number']:focus {
   opacity: 1;
 }
 
-#spin {
-  color: white !important;
-}
-
 input::-webkit-inner-spin-button {
   appearance: auto;
   display: inline-block;
@@ -98,6 +94,17 @@ input::-webkit-inner-spin-button {
   flex: 0 0 auto;
   padding: 3rem 0.75rem;
   border: 3px solid var(--dark-brown);
+}
+
+input::-webkit-input-placeholder {
+  text-overflow: inherit;
+  overflow-wrap: normal;
+  line-height: initial !important;
+  -webkit-user-modify: read-only !important;
+  white-space: pre;
+  overflow: hidden;
+  color: var(--neutral-brown);
+  opacity: 0.2;
 }
 
 p > .bind {
